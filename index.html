@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>رستوران ماژورل</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <!--make a header-->
+        <section class="header">
+            <video src="video/header.mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+            <div class="container">
+                <img src="images/logo-small.png" alt="logo">
+
+            </div>
+        </section>
+    <!--end make a header-->
+    <!--    make restaurant menu-->
+    <section class="restaurant">
+        <div class="title">
+            <h1>منو رستوران ماژورل</h1>
+            <p>بهترین کیفیت و طعم را <span> اینجا </span> تست کنید</p>
+        </div>
+        <div class="menu">
+
+            <div class="tab">
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'appetizer')" id="default0pen">پیش غذا</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'steak')">استیک</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'kabab')">کباب ها</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event,'rice')">غذا پلویی</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'pizzae')">پیتزا ایتالیایی</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'pizzaa')">پیتزا آمریکایی</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'burger')">برگر</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'salad')">سالاد</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'pasta')">پاستا</button>
+
+            </div>
+
+            <div id="appetizer" class="tabcontent">
+                <div><h3>میگو سوخاری</h3>
+                    <h3>178</h3>
+                </div>
+                <div><h3>سیب زمینی ساده</h3>
+                    <h3>55</h3>
+                </div>
+                <div><h3>سیب زمینی با دیپ گودا</h3>
+                    <h3>68</h3>
+                </div>
+                <div><h3>نان رول شده همراه با گوجه و پنیر موزارلا</h3>
+                    <h3>78</h3>
+                </div>
+                <div><h3>حمص</h3>
+                    <h3>73</h3>
+                </div>
+                <div><h3>کالاماری سوخاری</h3>
+                    <h3>146</h3>
+                </div>
+                <div><h3>سیب زمینی سوخاری با پنیر موزارلا</h3>
+                    <h3>72</h3>
+                </div>
+                <div><h3>سیب زمینی و بیکن با قارچ و پنیر</h3>
+                    <h3>89</h3>
+                </div>
+                <div><h3>نان سیر</h3>
+                    <h3>79</h3>
+                </div>
+                <div><h3>بشقاب سبزیجات </h3>
+                    <h3>79</h3>
+                </div>
+                <div><h3>سوپ روز</h3>
+                    <h3>55</h3>
+                </div>
+            </div>
+            <div id="steak" class="tabcontent">
+                <div>
+                    <h3>تی بن استیک گوسفندی</h3>
+                    <p>راسته و فیله گوساله با استخوان، سس چیمیچوری، سبزیجات بخارپز</p>
+                    <h3>320</h3></div>
+                <div>
+                    <h3>ریبز استیک</h3>
+                    <p>ششصد گرم راسته گوساله با استخوان، سس باربیکیو، سیب زمینی سوخاری</p>
+                    <h3>280</h3></div>
+                <div>
+                    <h3>بیفتک</h3>
+                    <p>راسته گوساله مرینید شده، سس قارچ، ساید دیش سبزیجات بخارپز شده، پوره سیب زمینی</p>
+                    <h3>220</h3></div>
+                <div>
+                    <h3>فیله مینیون</h3>
+                    <p>فیله گوساله مرینید شده، سس گریوی، کینوا، سبزیجات بخارپز</p>
+                    <h3>250</h3></div>
+                <div>
+                    <h3>استیک مرغ</h3>
+                    <p>سیصد گرم سینه مرغ گریل شده، سبزیجات بخارپز،سس قارچ</p>
+                    <h3>165</h3></div>
+                <div>
+                    <h3>فاهیتا مرغ</h3>
+                    <p>دویست گرم سینه مرغ گریل شده همراه با سبزیجات، گواکاموله، سالسا، خامه ترش، نان تورتیا</p>
+                    <h3>150</h3></div>
+                <div>
+                    <h3>`پورتر هاوس`</h3>
+                    <p>راسته و فیله گوساله با استخوان، سس چیمیچوری، سبزیجات بخارپز</p>
+                    <h3>270</h3></div>
+                <div>
+                    <h3>فاهیتا گوشت</h3>
+                    <p>دویست گرم فیله گوساله گریل شده همراه با سبزیجات، گواکاموله، سالسا، خامه ترش، نان تورتیا</p>
+                    <h3>170</h3></div>
+            </div>
+            <div id="kabab" class="tabcontent">
+                <div>
+                    <h3>لقمه کباب شاه پسند</h3>
+                    <h3>118</h3></div>
+                <div>
+                    <h3>جوجه کباب درباری</h3>
+                    <h3>137</h3></div>
+                <div>
+                    <h3>خشخاش کباب</h3>
+                    <h3>125</h3></div>
+                <div>
+                    <h3> شالتو دجاج</h3>
+                    <h3>132</h3></div>
+                <div>
+                    <h3>کباب فیله گوساله</h3>
+                    <h3>235</h3></div>
+                <div>
+                    <h3>کباب بره شیشک</h3>
+                    <h3>235</h3></div>
+                <div>
+                    <h3>شیشلیک مشتی</h3>
+                    <h3>238</h3></div>
+                <div>
+                    <h3>جوجه ماستی زعفرانی</h3>
+                    <h3>115</h3></div>
+                <div>
+                    <h3>شالتو لحم</h3>
+                    <h3>171</h3></div>
+                <div>
+                    <h3>کباب برگ گوسفندی</h3>
+                    <h3>247</h3></div>
+            </div>
+            <div id="rice" class="tabcontent">
+                <div>
+                    <h3>باقالی پلو با ماهیچه</h3>
+                    <h3>255</h3></div>
+                <div>
+                    <h3>باقالی پلو با گردن</h3>
+                    <h3>250</h3></div>
+                <div>
+                    <h3>پلو قالبی زعفرونی</h3>
+                    <h3>35</h3></div>
+                <div>
+                    <h3> الارز</h3>
+                    <h3>48</h3></div>
+                <div>
+                    <h3>سردست بره شاهانه(دونفره)</h3>
+                    <h3>493</h3></div>
+                <div>
+                    <h3>طاجین مراکشی</h3>
+                    <h3>242</h3></div>
+                <div>
+                    <h3>پلو میگو</h3>
+                    <h3>150</h3></div>
+                <div>
+                    <h3>باقالی پلو قالبی</h3>
+                    <h3>39</h3></div>
+
+            </div>
+            <div id="pizzae" class="tabcontent">
+
+                <div>
+                    <h3>پپرونی</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر پیتزا، پپرونی</p>
+                    <h3>129</h3></div>
+                <div>
+                    <h3>اسپشیال</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر پیتزا، استیک، بیکن، قارچ، پیاز، فلفل دلمه، زیتون</p>
+                    <h3>152</h3></div>
+                <div>
+                    <h3>رست بیف</h3>
+                    <p>خمیر، سس قارچ، پنیر پیتزا، گوشت رست شده راسته، قارچ، فلفل دلمه رنگی</p>
+                    <h3>155</h3></div>
+                <div>
+                    <h3>چیکن پستو</h3>
+                    <p>خمیر، سس پستو، پنیر پیتزا، سینه مرغ گریل شده، گوجه مزه دار شده، ریحان</p>
+                    <h3>128</h3></div>
+                <div>
+                    <h3>چیکن ماشروم</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر، قارچ، سینه مرغ، فلفل دلمه، زیتون، پیاز</p>
+                    <h3>125</h3></div>
+                <div>
+                    <h3>مارگریتا</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر پیتزا، ریحان ایتالیایی</p>
+                    <h3>87</h3></div>
+                <div>
+                    <h3>سیر و استیک</h3>
+                    <p>خمیر، سس سیر، پنیر پیتزا، قارچ، استیک، پیاز، زیتون</p>
+                    <h3>143</h3></div>
+                <div>
+                    <h3>مکزیکانو</h3>
+                    <p>خمیر، سس قارچ، پنیر پیتزا، گوشت مزه دار شده، قارچ، زیتون، فلفل دلمه</p>
+                    <h3>149</h3></div>
+                <div>
+                    <h3>کاپریچیوزا</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر پیتزا، ژامبون گوشت و مرغ، قارچ، زیتون، فلفل دلمه</p>
+                    <h3>139</h3></div>
+                <div>
+                    <h3>چیکن ماشروم</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر، قارچ، سینه مرغ، فلفل دلمه، زیتون، پیاز</p>
+                    <h3>125</h3></div>
+                <div>
+                    <h3>پریماورا</h3>
+                    <p>خمیر، سس ناپولیتن، پنیر موزارلا، بادمجان گریل، کدو گریل،قارچ، گوجه گیلاسی، فلفل دلمه ای</p>
+                    <h3>94</h3></div>
+            </div>
+            <div id="pizzaa" class="tabcontent">
+
+                <div>
+                    <h3>استافدکراست چیکن</h3>
+                    <p> خمیر امریکن،سوسیس دور خمیر، سس گوجه فرنگی، پنیر پیتزا، سینه مرغ، فلفل دلمه، زیتون، پیاز</p>
+                    <h3>135</h3></div>
+                <div>
+                    <h3>اسپیشیال آمریکایی</h3>
+                    <p>خمیر، پنیر، سس مخصوص گوجه فرنگی، گوشت چرخ شده، کالباس گوشت، قارچ، فلفل دلمه، زیتون</p>
+                    <h3>129</h3></div>
+                <div>
+                    <h3>استافدکراست بیف</h3>
+                    <p>خمیر امریکن، سوسیس دور خمیر، سس گوجه فرنگی، پنیر پیتزا ، گوشت مزه دار شده، قارچ، فلفل دلمه، پیاز،</p>
+                    <h3>155</h3></div>
+                <div>
+                    <h3>سوسیس شکاری</h3>
+                    <p>خمیر امریکن، سس گوجه فرنگی، پنیر پیتزا، سوسیس شکاری</p>
+                    <h3>148</h3></div>
+                <div>
+                    <h3>میکس آمریکایی</h3>
+                    <p>کالباس میکس مرغ و گوشت، قارچ، فلفل دلمه، زیتون</p>
+                    <h3>118</h3></div>
+            </div>
+            <div id="burger" class="tabcontent">
+
+                <div>
+                    <h3>کابوی برگر</h3>
+                    <p>نان برگر، 180 گرم گوشت راسته گوساله چرخ کرده، بیکن، پنیر ورقه ای، پیاز کاراملایز، سیب زمینی سرخ شده</p>
+                    <h3>139</h3></div>
+                <div>
+                    <h3>اسپیشیال برگر</h3>
+                    <p> نان برگر، 360 گرم ترکیب راسته گوسفندی و راسته گوساله چرخ کرده، پنیر ورقه ای، بیکن، کاهو فرانسه، گوجه، خیارشور، پیاز کاراملایز، سیب زمینی سرخ شده </p>
+                    <h3>155</h3></div>
+                <div>
+                    <h3>استافدکراست بیف</h3>
+                    <p>خمیر امریکن، سوسیس دور خمیر، سس گوجه فرنگی، پنیر پیتزا ، گوشت مزه دار شده، قارچ، فلفل دلمه، پیاز،</p>
+                    <h3>155</h3></div>
+                <div>
+                    <h3>لم برگر</h3>
+                    <p>نان برگر، گوشت راسته گوسفندی چرخ کرده، پنیر ورقه ای، سس، پیاز، گوجه، خیارشور، کاهو، سیب زمینی سرخ شده </p>
+                    <h3>139</h3></div>
+                <div>
+                    <h3>هالوپینو برگر</h3>
+                    <p>نان برگر، گوشت راسته چرخ شده، سس، پنیر ورقه ای، هالوپینو، کاهو،گوجه، خیارشور، سیب زمینی سرخ شده</p>
+                    <h3>135</h3></div>
+                <div>
+                    <h3>برگر کلاسیک</h3>
+                    <p> نان برگر، گوشت راسته گوساله چرخ کرده، سس، کاهو، گوجه، پیاز، خیارشور، سیب زمینی سرخ شده</p>
+                    <h3>117</h3></div>
+                <div>
+                    <h3>چیکن بیکن رانچ</h3>
+                    <p>نان برگر، سینه مرغ سوخاری شده، سس، پنیر ورقه ای، بیکن، کاهو، گوجه، خیارشور، سیب زمینی سرخ شده</p>
+                    <h3>115</h3></div>
+                <div>
+                    <h3>ماشروم برگر</h3>
+                    <p>نان برگر، گوشت راسته گوساله چرخ کرده، پنیر ورقه ای، سس قارچ، گوجه، خیارشور، کاهو، سیب زمینی سرخ شده</p>
+                    <h3>138</h3></div>
+                <div>
+                    <h3>چیز برگر</h3>
+                    <p>نان برگر، گوشت راسته چرخ شده، سس، پنیر ورقه ای، کاهو، گوجه، خیارشور، سیب زمینی سرخ شده</p>
+                    <h3>128</h3></div>
+            </div>
+            <div id="salad" class="tabcontent">
+
+                <div>
+                    <h3>سالاد مرغ کریسپی</h3>
+                    <p> کاهو رسمی، سینه مرغ سوخاری، گوجه مزه دارشده، زیتون، پارمژان، سس سزار</p>
+                    <h3>139</h3></div>
+                <div>
+                    <h3>کینوا</h3>
+                    <p> کینوا مزه دار شده، سبزیجات اورگانیک، سس خردل و عسل </p>
+                    <h3>118</h3></div>
+                <div>
+                    <h3>کرنبری</h3>
+                    <p> فیله گوساله گریل شده، میوه های فصل، سس بالزامیک </p>
+                    <h3>142</h3></div>
+                <div>
+                    <h3>سزار گریل</h3>
+                    <p> کاهو رسمی، کاهو فرانسوی، سینه مرغ گریل شده، زیتون، پارمژان، سس سزار </p>
+                    <h3>127</h3></div>
+                <div>
+                    <h3> تریاکی</h3>
+                    <p> کاهو رسمی، سینه مرغ گریل شده، اسفناج، نان پیتا سرخ شده، گوجه، هویج، خیار، کنجد، سبزیجات اورگانیک، سس تریاکی</p>
+                    <h3>135</h3></div>
+                <div>
+                    <h3>استیک و اسفناج</h3>
+                    <p> اسفناج، فیله گوساله گریل شده، میوه های فصل، سس بالزامیک</p>
+                    <h3>148</h3></div>
+                <div>
+                    <h3>فتوش</h3>
+                    <p>کاهو، گوجه، خیار، تربچه، پیاز، ریحان،هویج، جوانه، سبزیجات ارگانیک، چیپس پیتا، سس سماق
+
+                    </p>
+                    <h3>85</h3></div>
+            </div>
+            <div id="pasta" class="tabcontent">
+
+                <div>
+                    <h3>پنه چیکن آلفردو تنوری</h3>
+                    <p> پنه، قارچ، فیله مرغ، سس آفردو، پارمزان، پنیر پیتزا</p>
+                    <h3>125</h3></div>
+                <div>
+                    <h3>پنه چیکن آلفردو</h3>
+                    <p> پنه، قارچ، فیله مرغ، سس آلفردو، پارمزان </p>
+                    <h3>112</h3></div>
+                <div>
+                    <h3>اسپاگتی اسپینا چوچیز</h3>
+                    <p>اسپاگتی، اسفناج، پنیر موزارلا، سس آلفردو، پارمژان، گوجه گیلاسی</p>
+                    <h3>118</h3></div>
+                <div>
+                    <h3>پنه بیف آلفردو تنوری</h3>
+                    <p>پنه، قارچ، فیله گوساله، سس آلفردو، پارمزان، پنیر پیتزا </p>
+                    <h3>139</h3></div>
+                <div>
+                    <h3>پنه بیف آلفردو</h3>
+                    <p>
+                        پنه، قارچ، فیله گوساله، سس آلفردو، پارمزان
+                    </p>
+                    <h3>127</h3></div>
+                <div>
+                    <h3>فتوچینی بیف ریکوتا</h3>
+                    <p> فتوچینی، فیله گوساله، قارچ، پنیر ریکوتا، سس آلفردو</p>
+                    <h3>129</h3></div>
+                <div>
+                    <h3>مک اند چیز</h3>
+                    <p>
+                        ماکارونی،پنیر چدار، بیکن، جعفری
+                    </p>
+                    <h3>120</h3></div>
+            </div>
+
+        </div>
+    </section>
+    <!--end make restaurant menu-->
+    <!--  make coldbar menu-->
+    <section class="coldbar">
+        <div class="title">
+            <h1> منو <span>بار سرد</span> ماژورل</h1>
+        </div>
+        <div class="menu">
+
+            <div class="tab">
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'special')" id="defaultOpen">مخصوص ماژورل</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'mocktail')">ماکتل ها</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'tikidrink')">تیکی درینک</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event,'milkshake')">میلک شیک</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'frape')">فراپه و اسموتی</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'natural')">طبیعی</button>
+
+
+            </div>
+
+            <div id="special" class="tabcontent">
+                <div><h3>گامورا</h3>
+                    <p> مِلون، انگور سفید، گرین میکس</p>
+                    <h3>55</h3>
+                </div>
+                <div><h3>رباب حدید</h3>
+                    <p>هاوایی میکس، کورن فلکس، مغز پسته</p>
+                    <h3>65</h3>
+                </div>
+                <div><h3>گوست رایدر</h3>
+                    <p>برگاموت، تروپیکال، بلک میکس</p>
+                    <h3>75</h3>
+                </div>
+                <div><h3>لوتوس</h3>
+                    <p>رُز، تروپیکال،‌ توت فرنگی</p>
+                    <h3>53</h3>
+                </div>
+            </div>
+            <div id="mocktail" class="tabcontent">
+                <div>
+                    <h3>لیموناد - طعم دار</h3>
+                    <h3>41</h3></div>
+                <div>
+                    <h3>موخیتو - طعم دار</h3>
+                    <p>نعنا، ‌لایم، کلاب ‌سودا</p>
+                    <h3>44</h3></div>
+                <div>
+                    <h3>اطلس سان رایز</h3>
+                    <p>بلوکوراسائو، آلوئه ورا، ‌پرتقال</p>
+                    <h3>48</h3></div>
+                <div>
+                    <h3>لِیدی کیلر</h3>
+                    <p> آدامس، بلومیکس، ‌بلوبری</p>
+                    <h3>45</h3></div>
+                <div>
+                    <h3>
+                        لیموناد - کلاسیک</h3>
+                    <h3>37</h3></div>
+                <div>
+                    <h3>موخیتو- کلاسیک</h3>
+                    <p>نعنا، ‌لایم، کلاب ‌سودا</p>
+                    <h3>39</h3></div>
+                <div>
+                    <h3>کوبا لیبره</h3>
+                    <p> چای، لِمون، کولا</p>
+                    <h3>47</h3></div>
+                <div>
+                    <h3>اَپلتینی</h3>
+                    <p>سیب سبز،‌ لایم، ‌کلاب‌ سودا</p>
+                    <h3>49</h3></div>
+                <div>
+                    <h3>فرنچ فلگ</h3>
+                    <p>بلوکوراسائو، ‌لیموناد،‌ کرن بری</p>
+                    <h3>35</h3></div>
+            </div>
+            <div id="tikidrink" class="tabcontent">
+                <div>
+                    <h3>لاکانوکی</h3>
+                    <p> چای طعم دار، گواوا،‌ هلو</p>
+                    <h3>52</h3></div>
+                <div>
+                    <h3>موآنا</h3>
+                    <p> تروپیکال، تریپل سک، استار فروت </p>
+                    <h3>51</h3></div>
+                <div>
+                    <h3>کاپیتان مورگان</h3>
+                    <p>هالوپینو،‌ رام، میکس مرکبات</p>
+                    <h3>47</h3></div>
+                <div>
+                    <h3> تاهیتی</h3>
+                    <p>تاماریند، لواشک، شلیل</p>
+                    <h3>64</h3></div>
+                <div>
+                    <h3>کیوبان سانست</h3>
+                    <p>پشن فروت، زردآلو، ‌کاکتوس</p>
+                    <h3>48</h3></div>
+            </div>
+            <div id="milkshake" class="tabcontent">
+                <div>
+                    <h3>چیز کیک</h3>
+                    <p>پنیر، کراکر، کارامل</p>
+                    <h3>52</h3></div>
+                <div>
+                    <h3>ردولوت</h3>
+                    <p>ردولوت میکس، ‌باتر میلک،‌ چاکلت</p>
+                    <h3>47</h3></div>
+                <div>
+                    <h3>فریک شیک</h3>
+                    <p> گاناش، براونی، کیت کت</p>
+                    <h3>95</h3></div>
+                <div>
+                    <h3>دارک</h3>
+                    <p>شکلات دارک،‌ کاکائو، چاکلت چیپس</p>
+                    <h3>45</h3></div>
+                <div>
+                    <h3>پنکیک</h3>
+                    <p>میکس پنکیک،‌ وایت چاکلت، وانیل</p>
+                    <h3>47</h3></div>
+                <div>
+                    <h3>موکاهازلنات</h3>
+                    <p>تریپل چاکلت،‌ فندق،‌ کره بادام زمینی</p>
+                    <h3>59</h3></div>
+            </div>
+            <div id="frape" class="tabcontent">
+
+                <div>
+                    <h3>وری بری</h3>
+                    <p>توت فرنگی، تمشک،‌ شاتوت</p>
+                    <h3>51</h3></div>
+                <div>
+                    <h3>مینت مارگاریتا</h3>
+                    <p> نعنا، لایم،‌ اسپرایت</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>هاوایی</h3>
+                    <p> موز، انبه، پشن فروت</p>
+                    <h3>51</h3></div>
+                <div>
+                    <h3>پیناکولادا</h3>
+                    <p> آناناس، ‌نارگیل، ‌خامه</p>
+                    <h3>68</h3></div>
+                <div>
+                    <h3>گرین اسموتی</h3>
+                    <p>کرفس، ریحان،‌ اسفناج</p>
+                    <h3>35</h3></div>
+            </div>
+            <div id="natural" class="tabcontent">
+
+                <div>
+                    <h3>میکس طبیعی (در فصل)</h3>
+                    <h3>52</h3></div>
+                <div>
+                    <h3>آبیموه طبیعی (در فصل)</h3>
+                    <h3>44</h3></div>
+            </div>
+        </div>
+    </section>
+    <!--end  make coldbar menu-->
+    <!--make hotbar menu-->
+    <section class="hotbar">
+        <div class="title">
+            <h1> منو <span>بار گرم</span> ماژورل</h1>
+        </div>
+        <div class="menu">
+
+            <div class="tab">
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'sperso')" id="defaultOpen">نوشیدنی اسپرسو بار بر پایه ی اسپرسو و شیر</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'speciality')">قهوه دمی اسپرسو اسپیشیالیتی</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'expert')">قهوه دمی تخصصی</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event,'tea')">چای دمنوش و خوش نوش های ارگانیک</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'chokolate')">شکلات بار</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'desser')">دسر</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'icecoffee')">آیس کافی ها بر پایه اسپرسو یا شیر</button>
+                <button class="tablinks btn btn-outline-light text-secondary btn-primary" onclick="foodType(event, 'coldbro')">کلد برو</button>
+
+
+            </div>
+
+            <div id="sperso" class="tabcontent">
+                <div><h3> اسپرسو - اسپشیالیتی</h3>
+                    <h3>45</h3>
+                </div>
+                <div><h3>امریکانو- اسپشیالیتی</h3>
+                    <h3>45</h3>
+                </div>
+                <div><h3>کافه لاته- اسپشیالیتی</h3>
+                    <h3>55</h3>
+                </div>
+                <div><h3>سینمون دولچه لته - اسپشیالیتی</h3>
+                    <h3>57</h3>
+                </div>
+                <div><h3> کاپوچینو- اسپشیالیتی</h3>
+                <h3>55</h3>
+            </div>
+                <div><h3>کارامل ماکیاتو- اسپشیالیتی</h3>
+                    <h3>57</h3>
+                </div>
+                <div><h3>موکا- اسپشیالیتی</h3>
+                    <h3>60</h3>
+                </div>
+                <div><h3>آفوگاتو - اسپشیالیتی</h3>
+                    <h3>57</h3>
+                </div>
+                <div><h3> اسپرسو – کامرشیال</h3>
+                <h3>32</h3>
+            </div>
+                <div><h3>امریکانو– کامرشیال</h3>
+                    <h3>32</h3>
+                </div>
+                <div><h3>کافه لاته– کامرشیال</h3>
+                    <h3>39</h3>
+                </div>
+                <div><h3>سینمون دولچه لته– کامرشیال</h3>
+                    <h3>43</h3>
+                </div>
+                <div><h3>کاپوچینو– کامرشیال</h3>
+                    <h3>39</h3>
+                </div>
+                <div><h3>کارامل ماکیاتو– کامرشیال</h3>
+                    <h3>42</h3>
+                </div>
+                <div><h3>موکا– کامرشیال</h3>
+                    <h3>45</h3>
+                </div>
+                <div><h3>آفوگاتو - کامرشیال</h3>
+                    <h3>39</h3>
+                </div>
+            </div>
+            <div id="speciality" class="tabcontent">
+                <div>
+                    <h3>کمکس و وی 60 – دو کاپ</h3>
+                    <p>قهـــوه ای با نمره 100 استاندارد کیــــفی و با کیفیت فـــوق العاده بالا و طعمــی متفاوت‌تر نسبت به سایر قهوه های اسپشیالیتی و نژاد‌گونه کمیاب‌تر</p>
+                    <h3>105</h3></div>
+                <div>
+                    <h3>کمکس و وی 60 – تک کاپ</h3>
+                    <p>قهـــوه ای با نمره 100 استاندارد کیــــفی و با کیفیت فـــوق العاده بالا و طعمــی متفاوت‌تر نسبت به سایر قهوه های اسپشیالیتی و نژاد‌گونه کمیاب‌تر</p>
+                    <h3>78</h3></div>
+            </div>
+            <div id="expert" class="tabcontent">
+                <div>
+                    <h3>سایفون</h3>
+                    <h3>39</h3></div>
+                <div>
+                    <h3>وی 60 - دو کاپ</h3>
+                    <h3>65</h3></div>
+                <div>
+                    <h3>کمکس - دو کاپ</h3>
+                    <p>دم آوری قهوه اسپشیالیتی به روش پوراور</p>
+                    <h3>65</h3></div>
+                <div>
+                    <h3> فرنچ پرس</h3>
+                    <h3>39</h3></div>
+                <div>
+                    <h3>کانادیانو</h3>
+                    <p>دم آوری قهوه با چوب</p>
+                    <h3>39</h3></div>
+                <div>
+                    <h3>وی 60 - تک کاپ</h3>
+                    <h3>45</h3></div>
+                <div>
+                    <h3>کمکس - تک کاپ</h3>
+                    <p>دم آوری قهوه اسپشیالیتی به روش پوراور</p>
+                    <h3>45</h3></div>
+                <div>
+                    <h3>ترک</h3>
+                    <h3>25</h3></div>
+            </div>
+            <div id="tea" class="tabcontent">
+                <div>
+                    <h3> چای سبز یاسمن</h3>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>آنتی آلرژی</h3>
+                    <p>آویشن، عسل، لیمو، گل سرخ</p>
+                    <h3>39</h3></div>
+                <div>
+                    <h3>رایحه تابستان</h3>
+                    <p> بادرنجبویه، میخک، دارچین</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>رایحه زمستان</h3>
+                    <p>چای کوهی، نعنا، مریم گلی، پونه</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>چای زعفران</h3>
+                    <p>زعفران ، گل سرخ، چای سیاه</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>چای سفید</h3>
+                    <p>جوانه چای سفید اورگانیک</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>چای با باقلوا</h3>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>ویولت لوندر</h3>
+                    <p>گل بنفشه و اسطوخودوس یونانی به همراه به لیمو و عصاره سیب سرخ طبیعی</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>چای ماسالا</h3>
+                    <p> ترکیب مخلوطی از ادویه های معطر هندی به همراه شیر</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>رایحه بهار</h3>
+                    <p>گوشته میوه به، بهار نارنج، زعفران</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>رایحه پاییز</h3>
+                    <p>نعنا، پنیرک، پوسته پرتقال، لیمو</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3> چای سیاه</h3>
+                    <p>سرگل بهاره بهمراه دارچین و هل</p>
+                    <h3>25</h3></div>
+                <div>
+                    <h3>گل گاوزبان</h3>
+                    <h3>35</h3></div>
+
+            </div>
+            <div id="chokolate" class="tabcontent">
+
+                <div>
+                    <h3> وایت چاکلت</h3>
+                    <p>شکلات سفید</p>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>کارامل چاکلت</h3>
+                    <p> شکلات داغ با سس کارامل</p>
+                    <h3>39</h3></div>
+                <div>
+                    <h3>هات چاکلت</h3>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>بنانا چاکلت</h3>
+                    <p>شکلات دارک با رایحه و پوره موز طبیعی</p>
+                    <h3>48</h3></div>
+                <div>
+                    <h3>وایت چاکلت استرابری</h3>
+                    <p>شکلات سفید و توت فرنگی
+
+                    </p>
+                    <h3>45</h3></div>
+            </div>
+            <div id="desser" class="tabcontent">
+
+                <div>
+                    <h3> کیک روز</h3>
+                    <h3>39</h3></div>
+            </div>
+            <div id="icecoffee" class="tabcontent">
+                <div>
+                    <h3> آیس لاته</h3>
+                    <h3>39</h3></div>
+                <div>
+                    <h3> کارامل فراپ خامه ای</h3>
+                    <h3>55</h3></div>
+                <div>
+                    <h3>آیس آمریکانو- کامرشیال</h3>
+                    <h3>35</h3></div>
+                <div>
+                    <h3>  فراپاچینو</h3>
+                    <h3>55</h3></div>
+                <div>
+                    <h3> آیس چاکلت</h3>
+                    <h3>45</h3></div>
+                <div>
+                    <h3> نوتلا فلیور</h3>
+                    <h3>54</h3></div>
+                <div>
+                    <h3> آیس آمریکانو - اسپشیالیتی</h3>
+                    <h3>45</h3></div>
+            </div>
+            <div id="coldbro" class="tabcontent">
+                <div>
+                    <h3> پورتوریکو آیس</h3>
+                    <h3>39</h3></div>
+                <div>
+                    <h3> آیس واینی</h3>
+                    <h3>55</h3></div>
+            </div>
+        </div>
+    </section>
+    <!--end make hotbar menu-->
+    <!--make contact-->
+    <section class="contact">
+        <div>
+            <a href="https://www.instagram.com/majorelle.mehrshahr/">follow us <span class="fa fa-instagram"> </span>
+            </a>
+
+        </div>
+        <div>
+            <p>  مهرشهر، بلوار شهرداری، خیابان ۱۰۹، پلاک ۴۴۷ <span class="fa fa-location-arrow"></span></p>
+        </div>
+        <div>
+            <h3> <span class="fa fa-phone"> +98 26 3341 3647 </span></h3>
+        </div>
+
+    </section>
+    <!-- end make contact-->
+    <!--footer-->
+    <footer>
+        <p>design by <a href="https://www.instagram.com/farnaz.kohansal/"> farnaz.kohansal </a></p>
+    </footer>
+    <!--end footer-->
+
+<!-- menu js-->
+    <script>
+        function foodType(evt, foodType) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(foodType).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+<!--bootstrap js-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
